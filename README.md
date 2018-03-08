@@ -43,13 +43,19 @@ The front sensors are able to determine if the grids in blue (1 or 2 grids away)
 
 The Left LR sensor is able to consistently determine if there are obstacles 3 or 4 grids away from the robot. Grids 1 and 2 are bad ranges for the LR sensor, and we return 0 for any distance in that range. We return -1 for any distances further than 4 grids.
 
-<a href="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/Screen-Shot-2017-03-30-at-2.37.53-AM-2azw50t.png"><img class="wp-image-194 aligncenter" src="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/Screen-Shot-2017-03-30-at-2.37.53-AM-2azw50t.png" alt="" width="556" height="309" /></a>
+<p align="center">
+  <img src="images/sensor image.png" width="350"/>
+</p>
 <h4><strong>Sensor Position on Bottom Plate</strong></h4>
 On the <strong>bottom plate</strong>, we place<strong> 2 SR sensors</strong> pointing <strong>left and right</strong> as per the diagram below. They able to determine if the grids in blue (1, 2 grids away) are free from obstacles. Further distances cannot be determined consistently, and the Arduino will return "-1" for those values.
 
-<a href="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/Screen-Shot-2017-03-30-at-2.47.27-AM-18ch3rg.png"><img class="wp-image-195 aligncenter" src="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/Screen-Shot-2017-03-30-at-2.47.27-AM-18ch3rg.png" alt="" width="558" height="312" /></a>
+<p align="center">
+  <img src="images/sensor bottom.png" width="350"/>
+</p>
 <h3>Overall Sensor Readings</h3>
-<h3><a href="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/Screen-Shot-2017-03-30-at-2.52.49-AM-28v56ha.png"><img class="wp-image-196 aligncenter" src="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/Screen-Shot-2017-03-30-at-2.52.49-AM-28v56ha.png" alt="" width="558" height="313" /></a></h3>
+<h3><p align="center">
+  <img src="images/overall sensor.png" width="350"/>
+</p></h3>
 <h2><strong>Movement Control</strong></h2>
 <h3><strong>Application of PID</strong></h3>
 The code below shows the computation of the PID and the relationship between K1, KP, KI, KD and K2, KP, KD and K3, KD which are obtained from the lab document titled <em>Implementing PID Controller for 2-wheel drive robots.</em>
@@ -73,8 +79,9 @@ The code below shows the computation of the PID and the relationship between K1
 We configured our <em>Setpoint</em> to our target RPM of 62, and used Arduino's serial plotter to observe the RPM of both motors.
 
 Plotting RPM values against time, the blue and red graphs represent the RPM of our left and right motors respectively.  From the graph, we observe that both motors are able to accelerate to 62 RPM and remain stable within a desirable time period.
-<strong><a href="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/Screen-Shot-2017-03-27-at-8.05.32-pm-21x3e4b.png">
-<img class="wp-image-64 aligncenter" src="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/Screen-Shot-2017-03-27-at-2.01.24-AM-s50s35.png" alt="" width="441" height="308" /></a></strong>
+<strong><p align="center">
+  <img src="images/pid.png" width="350"/>
+</p>></strong>
 
 In order to derive at our KP, KI and KD values, we tuned the values through trial and error, ensuring that we are able to obtain a stable output with the serial plotter. The code below shows our KP, KI and KD values for each motor. The left motor and right motor are represented by ML and MR respectively.
 <pre>float KP_ML = 4;  float KI_ML = 0.27;  float KD_ML = 5;</pre>
