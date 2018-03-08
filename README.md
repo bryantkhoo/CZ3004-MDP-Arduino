@@ -10,8 +10,10 @@ Code used for our Arduino robot in our last leaderboard run. This is the combine
 2x Gearmotors w/ encoders
 1x Battery, SLA 6V, TLA633
 <h2>Assembled Robot</h2>
-![Alt text](images/robot front.jpeg?raw=true "Title")
-![Alt text]images/robot top.jpeg?raw=true "Title")
+<p align="center">
+  <img src="images/robot front.jpeg" width="350"/>
+  <img src="images/robot top.jpeg" width="350"/>
+</p>
 <h2><strong><strong>Sensors</strong></strong></h2>
 We utilise a total of <strong>5 Short-Range (SR)</strong> IR sensors and <strong>1 Long-Range (LR)</strong> IR sensor.
 <h3>Sensor Readings &amp; Feedback</h3>
