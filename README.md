@@ -10,7 +10,8 @@ Code used for our Arduino robot in our last leaderboard run. This is the combine
 2x Gearmotors w/ encoders
 1x Battery, SLA 6V, TLA633
 <h2>Assembled Robot</h2>
-<a href="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/WhatsApp-Image-2017-03-30-at-11.46.30-AM-1784f3k.jpeg"><img class="wp-image-224 alignleft" src="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/WhatsApp-Image-2017-03-30-at-11.46.30-AM-1784f3k.jpeg" alt="" width="256" height="337" /></a><a href="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/WhatsApp-Image-2017-03-30-at-11.46.37-AM-zcnqgf-e1490846465956.jpeg"><img class="wp-image-225 alignleft" src="https://blogs.ntu.edu.sg/scemdp-201617s2-g02/files/2017/03/WhatsApp-Image-2017-03-30-at-11.46.37-AM-zcnqgf-e1490846492889.jpeg" alt="" width="255" height="335" /></a>
+![alt text](https://github.com/bryantkhoo/CZ3004-MDP-Arduino/blob/master/images/robot%20front.jpeg)
+![alt text](https://github.com/bryantkhoo/CZ3004-MDP-Arduino/blob/master/images/robot%20top.jpeg)
 <h2><strong><strong>Sensors</strong></strong></h2>
 We utilise a total of <strong>5 Short-Range (SR)</strong> IR sensors and <strong>1 Long-Range (LR)</strong> IR sensor.
 <h3>Sensor Readings &amp; Feedback</h3>
