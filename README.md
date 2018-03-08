@@ -44,17 +44,17 @@ The front sensors are able to determine if the grids in blue (1 or 2 grids away)
 The Left LR sensor is able to consistently determine if there are obstacles 3 or 4 grids away from the robot. Grids 1 and 2 are bad ranges for the LR sensor, and we return 0 for any distance in that range. We return -1 for any distances further than 4 grids.
 
 <p align="center">
-  <img src="images/sensor image.png" width="350"/>
+  <img src="images/sensor image.png" width="650"/>
 </p>
 <h4><strong>Sensor Position on Bottom Plate</strong></h4>
 On the <strong>bottom plate</strong>, we place<strong> 2 SR sensors</strong> pointing <strong>left and right</strong> as per the diagram below. They able to determine if the grids in blue (1, 2 grids away) are free from obstacles. Further distances cannot be determined consistently, and the Arduino will return "-1" for those values.
 
 <p align="center">
-  <img src="images/sensor bottom.png" width="350"/>
+  <img src="images/sensor bottom.png" width="650"/>
 </p>
 <h3>Overall Sensor Readings</h3>
 <h3><p align="center">
-  <img src="images/overall sensor.png" width="350"/>
+  <img src="images/overall sensor.png" width="650"/>
 </p></h3>
 <h2><strong>Movement Control</strong></h2>
 <h3><strong>Application of PID</strong></h3>
